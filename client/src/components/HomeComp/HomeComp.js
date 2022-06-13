@@ -6,8 +6,6 @@ import Footer from '../Footer/Footer';
 
 const HomeComp = () => {
 
-
-
     return (
         <div>
 
