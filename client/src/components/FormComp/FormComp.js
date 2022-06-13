@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './formComp.css'
 
 const FormComp = () => {
+
+    const [successful, setSuccessful] = useState('')
+    const [error, setError] = useState('')
 
     function handleFormSubmit() {
         console.log('clicked');
@@ -15,6 +18,13 @@ const FormComp = () => {
             phone: document.getElementById('phone').value
         }
 
+        if (formData.firstName === '' || formData.lastName === '' || formData.email === '' || formData.companyName === '' || formData.jobTitle === '' || formData.amount === '' || isNaN(formData.amount) || formData.phone === '' || isNaN(formData.phone)) {
+            setError('Missing fields')
+            return
+        }
+
+        setError('')
+
         fetch('https://eooiefz2j7vx4le.m.pipedream.net', {
             method: 'POST',
             headers: {
@@ -22,7 +32,10 @@ const FormComp = () => {
             },
             body: JSON.stringify(formData),
         })
-            .then(res => res.json())
+            .then(res => {
+                setSuccessful("Form has been sent!")
+                return res.json()
+            })
             .catch(err => console.error(err))
     }
 
@@ -75,6 +88,8 @@ const FormComp = () => {
                 <br />
 
                 <button className='form-submit-btn' onClick={handleFormSubmit}>Submit</button>
+                <p className='success'>{successful}</p>
+                <p className="error">{error}</p>
             </div>
         </div>
     )

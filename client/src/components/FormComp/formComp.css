@@ -33,7 +33,19 @@
 }
 
 .form-submit-btn:hover {
-    background-color: green;
+    background-color: rgb(20, 150, 20);
+}
+
+.success {
+    font-weight: 600;
+    color: rgb(0, 168, 34);
+    text-align: center;
+}
+
+.error {
+    font-weight: 600;
+    color: red;
+    text-align: center;
 }
 
 @media screen and (max-width: 1095px) {
