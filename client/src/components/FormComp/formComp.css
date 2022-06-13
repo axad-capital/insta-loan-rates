@@ -1,0 +1,43 @@
+:root {
+    --buttonGreen: rgb(112, 191, 112);
+}
+
+.form-container {
+    width: 90%;
+    max-width: 350px;
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.form-title {
+    text-align: center;
+}
+
+.form-container > input {
+    width: 93%;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.form-submit-btn {
+    width: 100%;
+    padding: 8px;
+    color: white;
+    background-color: var(--buttonGreen);
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.form-submit-btn:hover {
+    background-color: green;
+}
+
+@media screen and (max-width: 1095px) {
+    .form-container {
+        margin: 30px auto;
+    }
+}

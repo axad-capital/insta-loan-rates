@@ -1,0 +1,89 @@
+.nav-container {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    margin: 20px auto;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 290px;
+}
+
+.header-container {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
+    /* background-image: url('https://wefundllc.com/wp-content/uploads/2020/02/home-Banner.jpg'); */
+    background-image: url('./home-Banner.jpg');
+    background-attachment: scroll;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #719430;
+    background-size: cover;
+    padding: 30px;
+}
+
+.header {
+    width: 80%;
+    max-width: 1700px;
+    margin: 30px auto;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header-title-container {
+    width: 100%;
+    max-width: 600px;
+    color: white;
+}
+
+.header-title {
+    font-size: 60px;
+}
+
+.business-cash {
+    text-align: center;
+    width: 90%;
+    max-width: 1500px;
+    margin: 100px auto;
+}
+
+.business-text {
+    font-size: 20px;
+}
+
+.info-container {
+    width: 90%;
+    max-width: 1300px;
+    display: flex;
+    gap: 50px;
+    margin: 30px auto;
+}
+
+.contact {
+    padding: 100px;
+    background-color: black;
+}
+
+.contact-number {
+    border: 2px solid white;
+    padding: 8px;
+    font-size: 25px;
+}
+
+.contact-title {
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width: 1095px) {
+    .header {
+        display: block;
+        text-align: center;
+    }
+
+    .header-title-container {
+        margin: 50px auto;
+    }
+}
