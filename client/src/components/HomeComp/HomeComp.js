@@ -14,7 +14,7 @@ const HomeComp = () => {
                     <img src={Logo} alt="Logo" className="logo" />
                 </div>
                 <div className="navbar-number-container">
-                    <h1 className="nav-number">(555)123 4567</h1>
+                    <a href='tel:8668852068' className="nav-number">(866) 885-2068</a>
                 </div>
             </div>
 
@@ -52,7 +52,7 @@ const HomeComp = () => {
                 <h1 className="contact-title">Want to know how we can help you business?</h1>
                 <h1 className="contact-title">Contact us for more Information</h1>
                 <br />
-                <h1 className="contact-title"><span className='contact-number'>(555)123 4567</span></h1>
+                <h1 className="contact-title"><a  href='tel:8668852068' className='contact-number'>(866) 885-2068</a></h1>
             </div>
             
         <Footer />
