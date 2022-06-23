@@ -95,4 +95,27 @@
     .header-title-container {
         margin: 50px auto;
     }
+
+    .nav-container {
+        margin: 0;
+        width: 100%;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .nav-number {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .info-container {
+        display: block;
+        text-align: center;
+    }
+
+    .business-lines-container {
+        margin-bottom: 80px;
+    }
 }
