@@ -3,8 +3,11 @@ import './homeComp.css'
 import FormComp from '../FormComp/FormComp'
 import Logo from './instaloanlogo.png';
 import Footer from '../Footer/Footer';
+import { useLocation } from 'react-router-dom';
 
 const HomeComp = () => {
+
+    const location = useLocation();
 
     return (
         <div>
@@ -14,7 +17,8 @@ const HomeComp = () => {
                     <img src={Logo} alt="Logo" className="logo" />
                 </div>
                 <div className="navbar-number-container">
-                    <a href='tel:8668852068' className="nav-number">(866) 885-2068</a>
+                    {location.pathname === '/goog' ? <a href='tel:18774032421' className="nav-number">1(877) 403-2421</a> : location.pathname === '/fb' ? <a href='tel:18774032414' className="nav-number">1(877) 403-2414</a> : <a href='tel:8668852068' className="nav-number">(866) 885-2068</a>}
+
                 </div>
             </div>
 
@@ -24,7 +28,7 @@ const HomeComp = () => {
                         <h1 className="header-title">Simple, Fast, Safe, Business Financing</h1>
                         <h3 className="sub-title">InstaLoans provides strategic working capital, Approvals in as little as 24 hours</h3>
                     </div>
-                    <FormComp/>
+                    <FormComp />
                 </div>
             </div>
 
@@ -52,10 +56,10 @@ const HomeComp = () => {
                 <h1 className="contact-title">Want to know how we can help you business?</h1>
                 <h1 className="contact-title">Contact us for more Information</h1>
                 <br />
-                <h1 className="contact-title"><a  href='tel:8668852068' className='contact-number'>(866) 885-2068</a></h1>
+                {location.pathname === '/goog' ? <h1 className="contact-title"><a  href='tel:18774032421' className='contact-number'>1(877) 403-2421</a></h1> : location.pathname === '/fb' ? <h1 className="contact-title"><a href='tel:18774032414' className='contact-number'>1(877) 403-2414</a></h1> : <h1 className="contact-title"><a href='tel:8668852068' className='contact-number'>(866) 885-2068</a></h1>}
             </div>
-            
-        <Footer />
+
+            <Footer />
         </div>
     )
 }

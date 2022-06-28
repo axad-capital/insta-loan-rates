@@ -12,6 +12,8 @@ function App() {
       <Router>
         <Routes>
           <Route exact path='/' element={<HomeComp />} />
+          <Route exact path='/goog' element={<HomeComp />} />
+          <Route exact path='/fb' element={<HomeComp />} />
           <Route exact path='/privacy-policy' element={<PrivacyPolicy />} />
           <Route exact path='/terms' element={<Terms />} />
           <Route exact path='/disclaimer' element={<Disclaimer />} />
