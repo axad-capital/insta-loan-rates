@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/instaloanlogo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Get Instant Loans!"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/instaloanlogo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Get Instant Loans!" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -24,12 +22,13 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Insta Loans</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
+  <title>Insta Loans</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -39,5 +38,43 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+
+  <!-- everflow start -->
+  <script type="text/javascript" src="https://www.a1jkghtrk.com/scripts/sdk/everflow.js"></script>
+  <script type="text/javascript">
+    EF.click({
+      offer_id: EF.urlParameter('oid'),
+      affiliate_id: EF.urlParameter('affid'),
+      sub1: EF.urlParameter('sub1'),
+      sub2: EF.urlParameter('sub2'),
+      sub3: EF.urlParameter('sub3'),
+      sub4: EF.urlParameter('sub4'),
+      sub5: EF.urlParameter('sub5'),
+      uid: EF.urlParameter('uid'),
+      source_id: EF.urlParameter('source_id'),
+      transaction_id: EF.urlParameter('_ef_transaction_id'),
+    });
+  </script>
+
+  <script type="text/javascript" src="https://www.a1jkghtrk.com/scripts/sdk/everflow.js"></script>
+  <script type="text/javascript">
+    if (window.location.href === 'https://www.instaloanrates.com/thanks/goog' || window.location.href === 'https://instaloanrates.com/thanks/goog') {
+      EF.conversion({
+        offer_id: 1339,
+      });
+    }
+  </script>
+
+  <script type="text/javascript" src="https://www.a1jkghtrk.com/scripts/sdk/everflow.js"></script>
+  <script type="text/javascript">
+    if (window.location.href === 'https://www.instaloanrates.com/thanks/fb' || window.location.href === 'https://instaloanrates.com/thanks/fb') {
+      EF.conversion({
+        offer_id: 1340,
+      });
+    }
+  </script>
+  <!-- everflow end -->
+
+</body>
+
 </html>

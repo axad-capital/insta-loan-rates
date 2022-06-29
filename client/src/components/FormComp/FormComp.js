@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
 import './formComp.css'
+import { useLocation } from 'react-router-dom';
 
 const FormComp = () => {
+
+    const location = useLocation();
 
     const [successful, setSuccessful] = useState('')
     const [error, setError] = useState('')
@@ -37,6 +40,14 @@ const FormComp = () => {
                 return res.json()
             })
             .catch(err => console.error(err))
+
+        if (location.pathname.split('/')[1] === 'goog') {
+            window.location.href = '/thanks/goog'
+        } else if (location.pathname.split('/')[1] === 'fb') {
+            window.location.href = '/thanks/fb'
+        } else {
+            window.location.href = '/thanks'
+        }
     }
 
     return (

@@ -5,6 +5,9 @@ import PrivacyPolicy from './components/Footer/Legal/PrivacyPolicy';
 import Terms from './components/Footer/Legal/Terms';
 import Disclaimer from './components/Footer/Legal/Disclaimer';
 import Partners from './components/Footer/Legal/Partners';
+import Thanks from './components/Thanks/Thanks'
+import ThanksGoog from './components/Thanks/ThanksGoog'
+import ThanksFb from './components/Thanks/ThanksFb'
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
           <Route exact path='/terms' element={<Terms />} />
           <Route exact path='/disclaimer' element={<Disclaimer />} />
           <Route exact path='/partners' element={<Partners />} />
+          <Route exact path='/thanks' element={<Thanks />} />
+          <Route exact path='/thanks/goog' element={<ThanksGoog />} />
+          <Route exact path='/thanks/fb' element={<ThanksFb />} />
         </Routes>
       </Router>
     </div>
