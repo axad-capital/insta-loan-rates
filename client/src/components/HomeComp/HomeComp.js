@@ -17,7 +17,7 @@ const HomeComp = () => {
                     <img src={Logo} alt="Logo" className="logo" />
                 </div>
                 <div className="navbar-number-container">
-                    {location.pathname === '/goog' ? <a href='tel:18774032421' className="nav-number">1(877) 403-2421</a> : location.pathname === '/fb' ? <a href='tel:18774032414' className="nav-number">1(877) 403-2414</a> : <a href='tel:8668852068' className="nav-number">(866) 885-2068</a>}
+                    {location.pathname.split('/')[1] === 'goog' ? <a href='tel:18774032421' className="nav-number">1(877) 403-2421</a> : location.pathname.split('/')[1] === 'fb' ? <a href='tel:18774032414' className="nav-number">1(877) 403-2414</a> : <a href='tel:8668852068' className="nav-number">(866) 885-2068</a>}
 
                 </div>
             </div>
@@ -56,7 +56,7 @@ const HomeComp = () => {
                 <h1 className="contact-title">Want to know how we can help you business?</h1>
                 <h1 className="contact-title">Contact us for more Information</h1>
                 <br />
-                {location.pathname === '/goog' ? <h1 className="contact-title"><a  href='tel:18774032421' className='contact-number'>1(877) 403-2421</a></h1> : location.pathname === '/fb' ? <h1 className="contact-title"><a href='tel:18774032414' className='contact-number'>1(877) 403-2414</a></h1> : <h1 className="contact-title"><a href='tel:8668852068' className='contact-number'>(866) 885-2068</a></h1>}
+                {location.pathname.split('/')[1] === 'goog' ? <h1 className="contact-title"><a  href='tel:18774032421' className='contact-number'>1(877) 403-2421</a></h1> : location.pathname.split('/')[1] === 'fb' ? <h1 className="contact-title"><a href='tel:18774032414' className='contact-number'>1(877) 403-2414</a></h1> : <h1 className="contact-title"><a href='tel:8668852068' className='contact-number'>(866) 885-2068</a></h1>}
             </div>
 
             <Footer />
