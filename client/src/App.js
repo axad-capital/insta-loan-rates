@@ -8,6 +8,7 @@ import Partners from './components/Footer/Legal/Partners';
 import Thanks from './components/Thanks/Thanks'
 import ThanksGoog from './components/Thanks/ThanksGoog'
 import ThanksFb from './components/Thanks/ThanksFb'
+import LandingPage from './components/LandingPage/LandingPage';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Router>
         <Routes>
           <Route exact path='/' element={<HomeComp />} />
+          <Route exact path='/lp1' element={<LandingPage />} />
           <Route exact path='/goog' element={<HomeComp />} />
           <Route exact path='/fb' element={<HomeComp />} />
           <Route exact path='/privacy-policy' element={<PrivacyPolicy />} />

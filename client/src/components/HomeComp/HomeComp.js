@@ -1,7 +1,6 @@
 import React from 'react'
 import './homeComp.css'
 import FormComp from '../FormComp/FormComp'
-import Logo from './instaloanlogo.png';
 import Footer from '../Footer/Footer';
 import { useLocation } from 'react-router-dom';
 
@@ -14,7 +13,7 @@ const HomeComp = () => {
 
             <div className="nav-container">
                 <div className="logo-container">
-                    <img src={Logo} alt="Logo" className="logo" />
+                    <img src='/images/instaloanlogo.png' alt="Logo" className="logo" />
                 </div>
                 <div className="navbar-number-container">
                     {location.pathname.split('/')[1] === 'goog' ? <a href='tel:18774032421' className="nav-number">1(877) 403-2421</a> : location.pathname.split('/')[1] === 'fb' ? <a href='tel:18774032414' className="nav-number">1(877) 403-2414</a> : <a href='tel:8668852068' className="nav-number">(866) 885-2068</a>}
