@@ -1,0 +1,61 @@
+.lp-header-bg-container {
+    background-image: url('../../../../public/images/Header_BG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    background-position: center;
+}
+
+.lp-header-title-container {
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 5%;
+}
+
+.lp-header-title-container>div>h1 {
+    font-size: 60px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.lp-header-title-container>div>p {
+    font-size: 30px;
+}
+
+.apply-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 750px;
+    right: 600px;
+    left: 200px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1190px) {
+    .lp-header-title-container {
+        display: block;
+    }
+
+    .lp-header-title-container>div {
+        text-align: center;
+    }
+
+    .lp-header-title-container>div>h1 {
+        margin: 0 auto;
+        font-size: 40px;
+        max-width: none;
+    }
+
+    .lp-header-title-container>div>p {
+        font-size: 25px;
+    }
+
+    .apply-container {
+        position: static;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,53 @@
+.landing-page-form-container {
+    background-color: white;
+    padding: 30px 80px;
+    box-shadow: 0 0 10px 1px rgb(130, 130, 130);
+    border-radius: 10px;
+}
+
+.landing-page-form-container>h1 {
+    color: black;
+    max-width: 400px;
+}
+
+.landing-page-form>input {
+    border: none;
+    border-bottom: 1px solid rgb(214, 214, 214);
+    width: 100%;
+    padding: 10px 0;
+}
+
+.landing-page-form>input::placeholder {
+    color: rgb(173, 173, 173);
+}
+
+.landing-page-form>input:focus {
+    outline: none;
+}
+
+.landing-page-form-btn {
+    padding: 20px 50px;
+    background-color: rgb(35, 35, 82);
+    color: white;
+    font-weight: 700;
+    border-radius: 7px;
+    border: none;
+}
+
+@media screen and (max-width: 1190px) {
+    .landing-page-form-container {
+        width: 90%;
+        max-width: 400px;
+        padding: 10px;
+        margin: 50px auto;
+    }
+
+    .landing-page-form-container>h1 {
+        color: black;
+        text-align: center;
+    }
+
+    .landing-page-form {
+        padding: 20px;
+    }
+}

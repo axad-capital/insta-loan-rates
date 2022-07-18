@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
-import useWindowDimensions from '../../hooks/useWIndowDimensions';
+// import useWindowDimensions from '../../hooks/useWIndowDimensions';
 
-import './landingStyle.css'
+import './styles/nav.css'
 
 const Nav = () => {
 
     const [showMenu, setShowMenu] = useState('none')
 
-    const { width } = useWindowDimensions();
+    // const { width } = useWindowDimensions();
 
     function toggleMenu() {
         if (showMenu === 'none') {
@@ -48,8 +48,8 @@ const Nav = () => {
                         <li>Cash Advance</li>
                         <li>Small Business</li>
                         <li>Financial Help</li>
-                        <button className='request-btn'>REQUEST A LOAN</button>
                         <li>Contact Us</li>
+                        <button className='request-btn'>REQUEST A LOAN</button>
                     </ul>
                 </div>
             </div>
