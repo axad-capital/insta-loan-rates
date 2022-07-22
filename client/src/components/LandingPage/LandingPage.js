@@ -95,6 +95,7 @@ const LandingPage = () => {
                 <li><a href="/lp1">Blog</a></li>
               </ul>
             </div>
+            <br />
           </div>
 
           <div>
@@ -106,6 +107,7 @@ const LandingPage = () => {
                 <li><a href="mailto:email@example.com">email@example.com</a></li>
               </ul>
             </div>
+            <br />
           </div>
 
           <div>

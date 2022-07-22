@@ -48,7 +48,7 @@
 }
 
 .bca-info>div {
-    width: 100%;
+    width: 80%;
     max-width: 600px;
     position: absolute;
     left: 50%;
@@ -166,6 +166,12 @@
     .apply-container {
         position: static;
         justify-content: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .bca-container {
+        background-position: right;
     }
 
     .bca-info>div {
@@ -193,5 +199,30 @@
 @media screen and (max-width: 760px) {
     .financing-icons {
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 680px) {
+
+}
+
+@media screen and (max-width: 600px) {
+    .lp-header-title-container>div>h1 {
+        font-size: 30px;
+        width: 80%;
+    }
+
+    .lp-header-title-container>div>p {
+        width: 80%;
+        font-size: 20px;
+        margin: 0 auto;
+    }
+
+    .financing-title {
+        font-size: 30px;
+    }
+
+    .financing-icons>div>p {
+        font-size: 20px;
     }
 }

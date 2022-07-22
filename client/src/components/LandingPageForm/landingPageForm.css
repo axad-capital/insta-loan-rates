@@ -12,13 +12,13 @@
 
 .landing-page-form>input {
     border: none;
-    border-bottom: 1px solid rgb(214, 214, 214);
+    border-bottom: 1px solid rgb(150, 150, 150);
     width: 100%;
     padding: 10px 0;
 }
 
 .landing-page-form>input::placeholder {
-    color: rgb(173, 173, 173);
+    color: rgb(150, 150, 150);
 }
 
 .landing-page-form>input:focus {
@@ -46,9 +46,20 @@
     .landing-page-form-container>h1 {
         color: black;
         text-align: center;
+        font-size: 20px;
     }
 
     .landing-page-form {
         padding: 20px;
+    }
+
+    .landing-page-form>input {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .landing-page-form-container {
+        width: 80%;
     }
 }
