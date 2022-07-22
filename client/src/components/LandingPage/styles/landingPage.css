@@ -35,7 +35,116 @@
     font-size: 14px;
 }
 
-@media screen and (max-width: 1190px) {
+.bca-container {
+    background-image: url('../../../../public/images/bca-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+
+.bca-info {
+    position: relative;
+}
+
+.bca-info>div {
+    width: 100%;
+    max-width: 600px;
+    position: absolute;
+    left: 50%;
+    padding-top: 5%;
+}
+
+.apply-now-btn {
+    padding: 20px 50px;
+    background-color: var(--btnColor);
+    color: white;
+    font-weight: 700;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+}
+
+.blc-container {
+    display: flex;
+    padding: 50px 100px;
+    gap: 100px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.blc-container>div {
+    width: 50%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.financing-solutions-container {
+    background-image: url('../../../../public/images/FinancingSolutionsBG.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px;
+}
+
+.financing-title {
+    text-align: center;
+    margin: 10px auto;
+    max-width: 600px;
+    font-size: 50px;
+}
+
+.financing-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.financing-icons>div {
+    margin: 0 auto;
+    text-align: center;
+    margin: 30px;
+}
+
+.financing-icons>div>p {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.lp-footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: 50px auto 0 auto ;
+}
+
+.lp-footer-links {
+    list-style-type: none;
+}
+
+.lp-footer-links>li>a {
+    text-decoration: none;
+    color: black;
+}
+
+.newsletter-input {
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.newsletter-btn {
+    padding: 20px 50px;
+    background-color: var(--btnColor);
+    color: white;
+    font-weight: 700;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1195px) {
     .lp-header-title-container {
         display: block;
     }
@@ -57,5 +166,32 @@
     .apply-container {
         position: static;
         justify-content: center;
+    }
+
+    .bca-info>div {
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding-top: 600px;
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .blc-container {
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+
+    .blc-container>div {
+        width: 90%;
+        max-width: 800px;
+        margin: 50px auto;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .financing-icons {
+        grid-template-columns: repeat(1, 1fr);
     }
 }

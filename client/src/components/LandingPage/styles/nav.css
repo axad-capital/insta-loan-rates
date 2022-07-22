@@ -45,6 +45,7 @@
     background-color: var(--btnColor);
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .hamburger {
