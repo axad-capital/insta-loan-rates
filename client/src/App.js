@@ -9,6 +9,7 @@ import Thanks from './components/Thanks/Thanks'
 import ThanksGoog from './components/Thanks/ThanksGoog'
 import ThanksFb from './components/Thanks/ThanksFb'
 import LandingPage from './components/LandingPage/LandingPage';
+import LandingPageThanks from './components/Thanks/LandingPageThanks';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route exact path='/thanks' element={<Thanks />} />
           <Route exact path='/thanks/goog' element={<ThanksGoog />} />
           <Route exact path='/thanks/fb' element={<ThanksFb />} />
+          <Route exact path='/thanks-lp1' element={<LandingPageThanks />} />
         </Routes>
       </Router>
     </div>
