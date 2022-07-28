@@ -12,7 +12,8 @@ const LandingPageForm = () => {
       company: document.getElementById('company').value,
       job: document.getElementById('job').value,
       loan_amount: document.getElementById('amount').value,
-      phone: document.getElementById('phone').value
+      phone: document.getElementById('phone').value,
+      time_stamp: Date()
     }
 
     console.log(formData)
