@@ -13,7 +13,8 @@ const LandingPageForm = () => {
       job: document.getElementById('job').value,
       loan_amount: document.getElementById('amount').value,
       phone: document.getElementById('phone').value,
-      time_stamp: Date()
+      time_stamp: Date(),
+      trust_form_cert_url: document.getElementById('xxTrustedFormCertUrl_0').value
     }
 
     console.log(formData)
@@ -34,7 +35,7 @@ const LandingPageForm = () => {
       <div className='landing-page-form-container'>
         <h1>See if your business qualifies now</h1>
         <br />
-        <div className='landing-page-form'>
+        <form className='landing-page-form'>
           <input type="text" name="first-name" id="first-name" placeholder='FIRST NAME' />
           <br />
           <br />
@@ -56,9 +57,8 @@ const LandingPageForm = () => {
           <input type="number" name="phone" id="phone" placeholder='PHONE' />
           <br />
           <br />
-          <br />
-          <button onClick={handleSubmit} className='landing-page-form-btn'>APPLY NOW</button>
-        </div>
+        </form>
+        <button onClick={handleSubmit} className='landing-page-form-btn'>APPLY NOW</button>
       </div>
     </div>
   )
